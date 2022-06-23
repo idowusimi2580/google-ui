@@ -66,6 +66,17 @@ h2 a {
     margin: 0.5%;
 } 
 
+#ftr { 
+    background-color: lightgray; 
+    margin-bottom: 10%;
+    position: static; 
+    justify-content: left;
+    padding: 1%;
+    margin: 0%; 
+    border-bottom: 50%;
+    border-color: white;
+} 
+
 #ftr-2 ul { 
     background-color: lightgray; 
     margin-bottom: 10%;
