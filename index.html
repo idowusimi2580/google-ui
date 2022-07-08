@@ -9,7 +9,8 @@
     <style>
         * {
             text-decoration: none;
-
+            margin: 0;
+            box-sizing: border-box;
             font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
         }
 
@@ -53,7 +54,7 @@
             align-items: center;
             justify-content: end;
             gap: 1rem;
-            margin-right: 1rem;
+            margin: 1rem;
         }
 
         .top-nav a {
@@ -65,7 +66,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 50vh;
+            margin: 10rem 0;
+            justify-content: center;
         }
 
         .search-form {
@@ -199,383 +201,90 @@
                 href="https://www.google.com/setprefs?sig=0_03LZskWbqzih57_bc7X8Oqrm7MY%3D&amp;hl=pcm&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwik6ZqksOT4AhVaSkEAHaKiAzIQ2ZgBCBE">Nigerian
                 Pidgin</a> </div>
     </div>
+<style>
+    footer {
+        background-color: #f2f2f2;
+        position: fixed;
+    }
+    footer > div:first-of-type{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a
+    }
+    .footer-links{
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
+    }
 
+    .footer-link-div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    }
+    .first-div{
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+    }
+    .second-div {
+    order: 2;
+    }
+    .second-div a{
+    display: flex;
+    align-items: center;
+    }
+    .last-div{
 
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+    }
+    @media only screen and (max-width: 1200px){
+    .footer-link-div {
+    justify-content: space-evenly;
+    }
+    }
+    @media only screen and (max-width: 1200px){
+    .second-div {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+    }
+    }
+</style>
+<footer>
+    <div><span>Nigeria</span></div>
+    <div>
+        <div class="footer-link-div">
+            <div class="footer-link-div first-div">
+                <a class="footer-links" href="/">About</a>
+                <a class="footer-links" href="/">Advertising</a>
+                <a class="footer-links" href="/">Business</a>
+                <a class="footer-links" href="/">How Search works</a>
+            </div>
+            <div class="footer-link-div second-div">
+                <a class="footer-links" href="/">
+                    <img style="height: 14px;"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
 
-
-    <!-- <footer class="container">
-
-
-        <div id="ftr" class="ftr">
-            Nigeria
+                    <span class="footer-links">Carbon neutral since 2007</span>
+                </a>
+            </div>
+            <div class="footer-link-div last-div">
+                <a class="footer-links" href="/">Privacy</a>
+                <a class="footer-links" href="/">Terms</a>
+                <a class="footer-links" href="/">Settings</a>
+            </div>
         </div>
-
-        <div class="ftdr-2">
-            <div class="ftdr-21">
-                <ul>
-                    <li><a href="index.html"> About</a></li>
-                    <li><a href="index.html"> Advertising</a></li>
-                    <li><a href="index.html"> Business</a></li>
-                    <li><a href="index.html"> How Search Works</a></li>
-                </ul>
-            </div>
-
-            <div class="ftdr-22">
-                <ul>
-                    <li><a href="index.html"> Carbon neutral since 2007</a></li>
-                </ul>
-            </div>
-
-            <div class="ftdr-23">
-
-                <ul>
-                    <li><a href="index.html"> Privacy</a></li>
-                    <li><a href="index.html"> Terms</a></li>
-                    <li><a href="index.html"> Settings</a></li>
-                </ul>
-
-            </div>
-        </div>
-
-
-
-    </footer> -->
-    <div class=" ">
-        <style data-iml="1657114423305">
-            .SSwjIe {
-                padding: 0 20px
-            }
-
-            .KxwPGc {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between
-            }
-
-            @media only screen and (max-width:1200px) {
-                .KxwPGc {
-                    justify-content: space-evenly
-                }
-            }
-
-            .pHiOh {
-                display: block;
-                padding: 15px;
-                white-space: nowrap
-            }
-
-            .pHiOh,
-            a.pHiOh {
-                color: #70757a
-            }
-
-            .ktLKi {
-                white-space: nowrap;
-                vertical-align: top
-            }
-
-            .Pb9hCb {
-                height: 14px;
-                margin-right: 6px
-            }
-
-            .ssOUyb {
-                order: 2
-            }
-
-            @media only screen and (max-width:1200px) {
-                .ssOUyb {
-                    order: 0;
-                    width: 100%;
-                    justify-content: center
-                }
-            }
-
-            .waLeGd .ssOUyb {
-                order: 0;
-                width: 100%;
-                justify-content: center
-            }
-
-            .AghGtd {
-                justify-content: flex-start;
-                min-width: 30%;
-                order: 1
-            }
-
-            .iTjxkf {
-                justify-content: flex-end;
-                min-width: 30%;
-                order: 3
-            }
-        </style>
-        <footer>
-            <div class="div-1">Nigeria</div>
-            <div class="div-2" jscontroller="NzU6V" class="KxwPGc SSwjIe" data-sfe="true" data-sfsw="1200"
-                jsaction="rcuQ6b:npT2md">
-                <div class="KxwPGc AghGtd">
-                    <a class="pHiOh" href="/">About</a>
-                    <a class="pHiOh" href="/">Advertising</a>
-                    <a class="pHiOh" href="/">Business</a>
-                    <a class="pHiOh" href="/"> How Search works </a>
-                </div>
-                <div class="KxwPGc ssOUyb"><a class="pHiOh" href="/"><img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
-                            class="Pb9hCb" alt="" data-iml="1657114423305" data-atf="1" data-frt="0"><span
-                            class="ktLKi">Carbon
-                            neutral since 2007</span></a></div>
-                <div class="KxwPGc iTjxkf"><a class="pHiOh" href="https://policies.google.com/privacy?hl=en-NG&amp;fg=1"
-                        ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Fhl%3Den-NG%26fg%3D1&amp;ved=0ahUKEwik6ZqksOT4AhVaSkEAHaKiAzIQ8awCCBY">Privacy</a><a
-                        class="pHiOh" href="https://policies.google.com/terms?hl=en-NG&amp;fg=1"
-                        ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Fhl%3Den-NG%26fg%3D1&amp;ved=0ahUKEwik6ZqksOT4AhVaSkEAHaKiAzIQ8qwCCBc">Terms</a><span>
-                        <style data-iml="1657114423305">
-                            .ayzqOc:hover {
-                                text-decoration: underline
-                            }
-                        </style><span jscontroller="nabPbb" jsaction="KyPa0e:Y0y4c;BVfjhf:VFzweb;wjOG7e:gDkf4c;">
-                            <style data-iml="1657114423305">
-                                .cF4V5c {
-                                    background-color: #fff
-                                }
-
-                                .cF4V5c g-menu-item {
-                                    display: block;
-                                    font-size: 14px;
-                                    line-height: 23px;
-                                    white-space: nowrap
-                                }
-
-                                .cF4V5c g-menu-item a,
-                                .cF4V5c .y0fQ9c {
-                                    display: block;
-                                    padding-top: 4px;
-                                    padding-bottom: 4px;
-                                    cursor: pointer
-                                }
-
-                                .cF4V5c g-menu-item a,
-                                .cF4V5c g-menu-item a:visited,
-                                .cF4V5c g-menu-item a:hover {
-                                    text-decoration: inherit;
-                                    color: inherit
-                                }
-                            </style>
-                            <g-popup jsname="V68bde" jscontroller="DPreE" jsaction="A05xBd:IYtByb;EOZ57e:WFrRFb;"
-                                jsdata="mVjAjf;_;BgdXgo">
-                                <style data-iml="1657114423305">
-                                    .EwsJzb {
-                                        display: block
-                                    }
-
-                                    .rIbAWc {
-                                        cursor: pointer;
-                                        display: inline-block
-                                    }
-
-                                    .B8Kd8d {
-                                        position: absolute
-                                    }
-
-                                    .sAKBe {
-                                        border-radius: 8px;
-                                        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2)
-                                    }
-                                </style>
-                                <div jsname="oYxtQd" class="rIbAWc" aria-expanded="false" aria-haspopup="true"
-                                    role="button" tabindex="0" jsaction="WFrRFb;keydown:uYT2Vb">
-                                    <div jsname="LgbsSe" class="ayzqOc pHiOh" aria-controls="_No_FYqT2M9qUhbIPosWOkAM1"
-                                        aria-haspopup="true">Settings</div>
-                                </div>
-                                <div jsname="V68bde" class="EwsJzb sAKBe B8Kd8d" style="display:none;z-index:200">
-                                    <g-menu jsname="xl07Ob" class="cF4V5c gLSAk rShyOb" jscontroller="WlNQGd"
-                                        role="menu" tabindex="-1"
-                                        jsaction="PSl28c;focus:h06R8;keydown:uYT2Vb;mouseenter:WOQqYb;mouseleave:Tx5Rb;mouseover:IgJl9c">
-                                        <style data-iml="1657114423306">
-                                            .gLSAk {
-                                                border: none;
-                                                display: block;
-                                                outline: none;
-                                            }
-
-                                            .rShyOb {
-                                                white-space: nowrap
-                                            }
-
-                                            .gLSAk {
-                                                border-radius: 8px
-                                            }
-
-                                            .gLSAk {
-                                                padding: 5px 0
-                                            }
-                                        </style>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <style data-iml="1657114423306">
-                                                .ErsxPb {
-                                                    display: block;
-                                                    position: relative
-                                                }
-
-                                                .znKVS {
-                                                    padding: 0 16px;
-                                                    vertical-align: middle
-                                                }
-
-                                                .znKVS.tnhqA {
-                                                    padding: 0
-                                                }
-
-                                                .tnhqA>* {
-                                                    padding: 0 16px
-                                                }
-
-                                                .ohSfHb .znKVS {
-                                                    padding-left: 28px
-                                                }
-
-                                                .ErsxPb:hover {
-                                                    cursor: pointer
-                                                }
-
-                                                .ErsxPb,
-                                                .fbKdEb:hover {
-                                                    cursor: default
-                                                }
-
-                                                .dPaec,
-                                                g-menu-item[disabled] {
-                                                    pointer-events: none;
-                                                    cursor: default
-                                                }
-
-                                                .dPaec {
-                                                    border-top: 1px solid;
-                                                    height: 0;
-                                                    margin: 5px 0
-                                                }
-
-                                                .znKVS {
-                                                    line-height: 23px
-                                                }
-
-                                                .fbKdEb {
-                                                    background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);
-                                                    background-repeat: no-repeat;
-                                                    background-position: left center
-                                                }
-
-                                                .gvybPb,
-                                                .ErsxPb:active {
-                                                    background-color: rgba(0, 0, 0, 0.1)
-                                                }
-
-                                                .dPaec,
-                                                g-menu-item[disabled] {
-                                                    color: #cdcdcd !important
-                                                }
-
-                                                .dPaec {
-                                                    border-top-color: #dadce0
-                                                }
-                                            </style>
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><a
-                                                    href="https://www.google.com/preferences?hl=en-NG&amp;fg=1"
-                                                    role="menuitem" tabindex="-1">Search settings</a></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><a
-                                                    href="/advanced_search?hl=en-NG&amp;fg=1" role="menuitem"
-                                                    tabindex="-1">Advanced search</a></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><a
-                                                    href="/history/privacyadvisor/search/unauth?utm_source=googlemenu&amp;fg=1"
-                                                    role="menuitem" tabindex="-1">Your data in Search</a></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><a
-                                                    href="/history/optout?hl=en-NG&amp;fg=1" role="menuitem"
-                                                    tabindex="-1">Search history</a></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><a
-                                                    href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en-NG&amp;fg=1"
-                                                    role="menuitem" tabindex="-1">Search help</a></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none"><span
-                                                    data-bucket="websearch" role="menuitem" tabindex="-1"
-                                                    jsaction="trigger.YcfJ">Send feedback</span></div>
-                                        </g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb dPaec"
-                                            aria-disabled="true" aria-hidden="true" disabled="disabled" role="separator"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgw"></g-menu-item>
-                                        <g-menu-item jsname="NNJLud" jscontroller="CnSW2d" class="ErsxPb" role="none"
-                                            data-short-label="" jsdata="zPXzie;_;BgdXgs">
-                                            <div jsname="ibnC6b" class="znKVS OSrXXb tnhqA" role="none">
-                                                <div class="y0fQ9c"
-                                                    data-spl="/setprefs?hl=en&amp;prev=https://www.google.com/?pccc%3D1&amp;sig=0_03LZskWbqzih57_bc7X8Oqrm7MY%3D&amp;cs=2"
-                                                    id="YUIDDb" role="menuitem" tabindex="-1">
-                                                    <style data-iml="1657114423306">
-                                                        .tFYjZe {
-                                                            align-items: center;
-                                                            display: flex;
-                                                            justify-content: space-between;
-                                                            padding-bottom: 4px;
-                                                            padding-top: 4px
-                                                        }
-
-                                                        .tFYjZe:hover .iOHNLb,
-                                                        .tFYjZe:focus .iOHNLb {
-                                                            opacity: 1
-                                                        }
-
-                                                        .iOHNLb {
-                                                            color: #70757a;
-                                                            height: 20px;
-                                                            margin-top: -2px;
-                                                            opacity: 0;
-                                                            width: 20px
-                                                        }
-                                                    </style>
-                                                    <div jscontroller="fXO0xe" class="tFYjZe" data-bsdm="0" data-btf="0"
-                                                        data-hbc="#1a73e8" data-htc="#fff" data-spt="1" data-tsdm="0"
-                                                        role="link" tabindex="0"
-                                                        jsaction="ok5gFc;x6BCfb:ggFCce;w3Ukrf:aelxJb"
-                                                        data-ved="0ahUKEwik6ZqksOT4AhVaSkEAHaKiAzIQqsEHCBo">
-                                                        <div>Dark theme: Off</div>
-                                                        <div class="iOHNLb"><span
-                                                                style="height:20px;line-height:20px;width:20px"
-                                                                class="z1asCe aqvxcd"><svg focusable="false"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    enable-background="new 0 0 24 24" height="24"
-                                                                    viewBox="0 0 24 24" width="24">
-                                                                    <rect fill="none" height="24" width="24"></rect>
-                                                                    <path
-                                                                        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z">
-                                                                    </path>
-                                                                </svg></span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </g-menu-item>
-                                    </g-menu>
-                                </div>
-                            </g-popup>
-                        </span>
-                    </span></div>
-            </div>
-            <div jscontroller="GU4Gab" style="display:none" data-pcs="1" jsaction="rcuQ6b:npT2md"></div>
-        </footer>
-
-
     </div>
+</footer>
+
+
 </body>
 
 </html>
